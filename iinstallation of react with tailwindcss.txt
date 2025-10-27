@@ -1,0 +1,35 @@
+npx create-react-app my-navbar-app
+cd my-navbar-app
+
+
+step 2 :
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+step 3:
+ Update tailwind.config.js:
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+step 4:
+📂 Update src/index.css:
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+Step 5: Run command chalao
+
+npm start
